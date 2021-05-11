@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -20,13 +20,7 @@ void EmptyLinkFunctionForGeneratedCodeTinyFileDialogsLib() {}
 	TINYFILEDIALOGS_API UClass* Z_Construct_UClass_UTinyFileDialogsLib_NoRegister();
 	TINYFILEDIALOGS_API UClass* Z_Construct_UClass_UTinyFileDialogsLib();
 	ENGINE_API UClass* Z_Construct_UClass_UBlueprintFunctionLibrary();
-	TINYFILEDIALOGS_API UFunction* Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FLinearColor();
-	TINYFILEDIALOGS_API UFunction* Z_Construct_UFunction_UTinyFileDialogsLib_ShowInputBox();
-	TINYFILEDIALOGS_API UFunction* Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox();
-	TINYFILEDIALOGS_API UFunction* Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog();
-	TINYFILEDIALOGS_API UFunction* Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog();
-	TINYFILEDIALOGS_API UFunction* Z_Construct_UFunction_UTinyFileDialogsLib_ShowSelectFolderDialog();
 // End Cross Module References
 	static UEnum* ETinyDialogInputType_StaticEnum()
 	{
@@ -42,7 +36,7 @@ void EmptyLinkFunctionForGeneratedCodeTinyFileDialogsLib() {}
 		return ETinyDialogInputType_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ETinyDialogInputType(ETinyDialogInputType_StaticEnum, TEXT("/Script/TinyFileDialogs"), TEXT("ETinyDialogInputType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_TinyFileDialogs_ETinyDialogInputType_Hash() { return 1331468168U; }
+	uint32 Get_Z_Construct_UEnum_TinyFileDialogs_ETinyDialogInputType_Hash() { return 2710566332U; }
 	UEnum* Z_Construct_UEnum_TinyFileDialogs_ETinyDialogInputType()
 	{
 #if WITH_HOT_RELOAD
@@ -74,6 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeTinyFileDialogsLib() {}
 				Enumerators,
 				UE_ARRAY_COUNT(Enumerators),
 				RF_Public|RF_Transient|RF_MarkAsNative,
+				EEnumFlags::None,
 				UE4CodeGen_Private::EDynamicType::NotDynamic,
 				(uint8)UEnum::ECppForm::Regular,
 				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
@@ -96,7 +91,7 @@ void EmptyLinkFunctionForGeneratedCodeTinyFileDialogsLib() {}
 		return ETinyDialogIconType_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ETinyDialogIconType(ETinyDialogIconType_StaticEnum, TEXT("/Script/TinyFileDialogs"), TEXT("ETinyDialogIconType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_TinyFileDialogs_ETinyDialogIconType_Hash() { return 3357984082U; }
+	uint32 Get_Z_Construct_UEnum_TinyFileDialogs_ETinyDialogIconType_Hash() { return 1737839575U; }
 	UEnum* Z_Construct_UEnum_TinyFileDialogs_ETinyDialogIconType()
 	{
 #if WITH_HOT_RELOAD
@@ -134,6 +129,7 @@ void EmptyLinkFunctionForGeneratedCodeTinyFileDialogsLib() {}
 				Enumerators,
 				UE_ARRAY_COUNT(Enumerators),
 				RF_Public|RF_Transient|RF_MarkAsNative,
+				EEnumFlags::None,
 				UE4CodeGen_Private::EDynamicType::NotDynamic,
 				(uint8)UEnum::ECppForm::Regular,
 				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
@@ -156,7 +152,7 @@ void EmptyLinkFunctionForGeneratedCodeTinyFileDialogsLib() {}
 		return ETinyDialogMessageType_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ETinyDialogMessageType(ETinyDialogMessageType_StaticEnum, TEXT("/Script/TinyFileDialogs"), TEXT("ETinyDialogMessageType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_TinyFileDialogs_ETinyDialogMessageType_Hash() { return 439434879U; }
+	uint32 Get_Z_Construct_UEnum_TinyFileDialogs_ETinyDialogMessageType_Hash() { return 407652037U; }
 	UEnum* Z_Construct_UEnum_TinyFileDialogs_ETinyDialogMessageType()
 	{
 #if WITH_HOT_RELOAD
@@ -194,6 +190,7 @@ void EmptyLinkFunctionForGeneratedCodeTinyFileDialogsLib() {}
 				Enumerators,
 				UE_ARRAY_COUNT(Enumerators),
 				RF_Public|RF_Transient|RF_MarkAsNative,
+				EEnumFlags::None,
 				UE4CodeGen_Private::EDynamicType::NotDynamic,
 				(uint8)UEnum::ECppForm::Regular,
 				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
@@ -201,6 +198,79 @@ void EmptyLinkFunctionForGeneratedCodeTinyFileDialogsLib() {}
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
 		}
 		return ReturnEnum;
+	}
+	DEFINE_FUNCTION(UTinyFileDialogsLib::execShowColorChooser)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_Title);
+		P_GET_PROPERTY(FStrProperty,Z_Param_DefaultHexRGB);
+		P_GET_PROPERTY(FFloatProperty,Z_Param_Alpha);
+		P_GET_STRUCT(FLinearColor,Z_Param_DefaultRGB);
+		P_GET_UBOOL(Z_Param_bUseWin32);
+		P_GET_STRUCT_REF(FLinearColor,Z_Param_Out_OutColor);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=UTinyFileDialogsLib::ShowColorChooser(Z_Param_Title,Z_Param_DefaultHexRGB,Z_Param_Alpha,Z_Param_DefaultRGB,Z_Param_bUseWin32,Z_Param_Out_OutColor);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UTinyFileDialogsLib::execShowSelectFolderDialog)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_Title);
+		P_GET_PROPERTY(FStrProperty,Z_Param_DefaultPath);
+		P_GET_UBOOL(Z_Param_bUseWin32);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=UTinyFileDialogsLib::ShowSelectFolderDialog(Z_Param_Title,Z_Param_DefaultPath,Z_Param_bUseWin32);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UTinyFileDialogsLib::execShowOpenFileDialog)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_Title);
+		P_GET_PROPERTY(FStrProperty,Z_Param_DefaultPathAndFile);
+		P_GET_TARRAY(FString,Z_Param_FilterPatterns);
+		P_GET_PROPERTY(FStrProperty,Z_Param_SingleFilterDescription);
+		P_GET_UBOOL(Z_Param_bAllowMultipleSelects);
+		P_GET_UBOOL(Z_Param_bUseWin32);
+		P_GET_TARRAY_REF(FString,Z_Param_Out_OutStringArr);
+		P_GET_PROPERTY_REF(FIntProperty,Z_Param_Out_NumSelectedFiles);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=UTinyFileDialogsLib::ShowOpenFileDialog(Z_Param_Title,Z_Param_DefaultPathAndFile,Z_Param_FilterPatterns,Z_Param_SingleFilterDescription,Z_Param_bAllowMultipleSelects,Z_Param_bUseWin32,Z_Param_Out_OutStringArr,Z_Param_Out_NumSelectedFiles);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UTinyFileDialogsLib::execShowSaveFileDialog)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_Title);
+		P_GET_PROPERTY(FStrProperty,Z_Param_DefaultPathAndFile);
+		P_GET_TARRAY(FString,Z_Param_FilterPatterns);
+		P_GET_PROPERTY(FStrProperty,Z_Param_SingleFilterDescription);
+		P_GET_UBOOL(Z_Param_bUseWin32);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=UTinyFileDialogsLib::ShowSaveFileDialog(Z_Param_Title,Z_Param_DefaultPathAndFile,Z_Param_FilterPatterns,Z_Param_SingleFilterDescription,Z_Param_bUseWin32);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UTinyFileDialogsLib::execShowInputBox)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_Title);
+		P_GET_PROPERTY(FStrProperty,Z_Param_Message);
+		P_GET_PROPERTY(FByteProperty,Z_Param_DefaultInput);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=UTinyFileDialogsLib::ShowInputBox(Z_Param_Title,Z_Param_Message,ETinyDialogInputType(Z_Param_DefaultInput));
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UTinyFileDialogsLib::execShowMessageBox)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_Title);
+		P_GET_PROPERTY(FStrProperty,Z_Param_Message);
+		P_GET_PROPERTY(FByteProperty,Z_Param_DialogType);
+		P_GET_PROPERTY(FByteProperty,Z_Param_IconType);
+		P_GET_PROPERTY(FIntProperty,Z_Param_DefaultButton);
+		P_GET_UBOOL(Z_Param_bUseWin32);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(int32*)Z_Param__Result=UTinyFileDialogsLib::ShowMessageBox(Z_Param_Title,Z_Param_Message,ETinyDialogMessageType(Z_Param_DialogType),ETinyDialogIconType(Z_Param_IconType),Z_Param_DefaultButton,Z_Param_bUseWin32);
+		P_NATIVE_END;
 	}
 	void UTinyFileDialogsLib::StaticRegisterNativesUTinyFileDialogsLib()
 	{
@@ -227,39 +297,39 @@ void EmptyLinkFunctionForGeneratedCodeTinyFileDialogsLib() {}
 			FLinearColor OutColor;
 			FString ReturnValue;
 		};
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_OutColor;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Title;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_DefaultHexRGB;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Alpha;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_DefaultRGB;
 		static void NewProp_bUseWin32_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bUseWin32;
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_DefaultRGB;
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Alpha;
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_DefaultHexRGB;
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Title;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_OutColor;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowColorChooser_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_OutColor = { "OutColor", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowColorChooser_Parms, OutColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_Title = { "Title", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowColorChooser_Parms, Title), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_DefaultHexRGB = { "DefaultHexRGB", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowColorChooser_Parms, DefaultHexRGB), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_Alpha = { "Alpha", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowColorChooser_Parms, Alpha), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_DefaultRGB = { "DefaultRGB", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowColorChooser_Parms, DefaultRGB), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
 	void Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_bUseWin32_SetBit(void* Obj)
 	{
 		((TinyFileDialogsLib_eventShowColorChooser_Parms*)Obj)->bUseWin32 = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_bUseWin32 = { "bUseWin32", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(TinyFileDialogsLib_eventShowColorChooser_Parms), &Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_bUseWin32_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_DefaultRGB = { "DefaultRGB", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowColorChooser_Parms, DefaultRGB), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_Alpha = { "Alpha", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowColorChooser_Parms, Alpha), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_DefaultHexRGB = { "DefaultHexRGB", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowColorChooser_Parms, DefaultHexRGB), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_Title = { "Title", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowColorChooser_Parms, Title), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_OutColor = { "OutColor", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowColorChooser_Parms, OutColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowColorChooser_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_OutColor,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_bUseWin32,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_DefaultRGB,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_Alpha,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_DefaultHexRGB,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_Title,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_DefaultHexRGB,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_Alpha,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_DefaultRGB,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_bUseWin32,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_OutColor,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser_Statics::Function_MetaDataParams[] = {
@@ -292,25 +362,25 @@ void EmptyLinkFunctionForGeneratedCodeTinyFileDialogsLib() {}
 			TEnumAsByte<ETinyDialogInputType> DefaultInput;
 			FString ReturnValue;
 		};
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FBytePropertyParams NewProp_DefaultInput;
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Message;
 		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Title;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Message;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_DefaultInput;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowInputBox_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowInputBox_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowInputBox_Statics::NewProp_DefaultInput = { "DefaultInput", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowInputBox_Parms, DefaultInput), Z_Construct_UEnum_TinyFileDialogs_ETinyDialogInputType, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowInputBox_Statics::NewProp_Message = { "Message", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowInputBox_Parms, Message), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowInputBox_Statics::NewProp_Title = { "Title", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowInputBox_Parms, Title), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowInputBox_Statics::NewProp_Message = { "Message", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowInputBox_Parms, Message), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowInputBox_Statics::NewProp_DefaultInput = { "DefaultInput", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowInputBox_Parms, DefaultInput), Z_Construct_UEnum_TinyFileDialogs_ETinyDialogInputType, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowInputBox_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowInputBox_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UTinyFileDialogsLib_ShowInputBox_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowInputBox_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowInputBox_Statics::NewProp_DefaultInput,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowInputBox_Statics::NewProp_Message,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowInputBox_Statics::NewProp_Title,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowInputBox_Statics::NewProp_Message,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowInputBox_Statics::NewProp_DefaultInput,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowInputBox_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UTinyFileDialogsLib_ShowInputBox_Statics::Function_MetaDataParams[] = {
@@ -346,39 +416,39 @@ void EmptyLinkFunctionForGeneratedCodeTinyFileDialogsLib() {}
 			bool bUseWin32;
 			int32 ReturnValue;
 		};
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Title;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Message;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_DialogType;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_IconType;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_DefaultButton;
 		static void NewProp_bUseWin32_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bUseWin32;
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_DefaultButton;
-		static const UE4CodeGen_Private::FBytePropertyParams NewProp_IconType;
-		static const UE4CodeGen_Private::FBytePropertyParams NewProp_DialogType;
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Message;
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Title;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowMessageBox_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_Title = { "Title", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowMessageBox_Parms, Title), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_Message = { "Message", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowMessageBox_Parms, Message), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_DialogType = { "DialogType", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowMessageBox_Parms, DialogType), Z_Construct_UEnum_TinyFileDialogs_ETinyDialogMessageType, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_IconType = { "IconType", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowMessageBox_Parms, IconType), Z_Construct_UEnum_TinyFileDialogs_ETinyDialogIconType, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_DefaultButton = { "DefaultButton", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowMessageBox_Parms, DefaultButton), METADATA_PARAMS(nullptr, 0) };
 	void Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_bUseWin32_SetBit(void* Obj)
 	{
 		((TinyFileDialogsLib_eventShowMessageBox_Parms*)Obj)->bUseWin32 = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_bUseWin32 = { "bUseWin32", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(TinyFileDialogsLib_eventShowMessageBox_Parms), &Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_bUseWin32_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_DefaultButton = { "DefaultButton", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowMessageBox_Parms, DefaultButton), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_IconType = { "IconType", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowMessageBox_Parms, IconType), Z_Construct_UEnum_TinyFileDialogs_ETinyDialogIconType, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_DialogType = { "DialogType", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowMessageBox_Parms, DialogType), Z_Construct_UEnum_TinyFileDialogs_ETinyDialogMessageType, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_Message = { "Message", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowMessageBox_Parms, Message), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_Title = { "Title", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowMessageBox_Parms, Title), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowMessageBox_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_bUseWin32,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_DefaultButton,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_IconType,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_DialogType,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_Message,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_Title,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_Message,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_DialogType,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_IconType,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_DefaultButton,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_bUseWin32,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox_Statics::Function_MetaDataParams[] = {
@@ -416,56 +486,56 @@ void EmptyLinkFunctionForGeneratedCodeTinyFileDialogsLib() {}
 			int32 NumSelectedFiles;
 			FString ReturnValue;
 		};
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_NumSelectedFiles;
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_OutStringArr;
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_OutStringArr_Inner;
-		static void NewProp_bUseWin32_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bUseWin32;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Title;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_DefaultPathAndFile;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_FilterPatterns_Inner;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_FilterPatterns;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_SingleFilterDescription;
 		static void NewProp_bAllowMultipleSelects_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bAllowMultipleSelects;
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_SingleFilterDescription;
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_FilterPatterns;
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_FilterPatterns_Inner;
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_DefaultPathAndFile;
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Title;
+		static void NewProp_bUseWin32_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bUseWin32;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_OutStringArr_Inner;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_OutStringArr;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_NumSelectedFiles;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowOpenFileDialog_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_NumSelectedFiles = { "NumSelectedFiles", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowOpenFileDialog_Parms, NumSelectedFiles), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_OutStringArr = { "OutStringArr", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowOpenFileDialog_Parms, OutStringArr), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_OutStringArr_Inner = { "OutStringArr", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
-	void Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_bUseWin32_SetBit(void* Obj)
-	{
-		((TinyFileDialogsLib_eventShowOpenFileDialog_Parms*)Obj)->bUseWin32 = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_bUseWin32 = { "bUseWin32", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(TinyFileDialogsLib_eventShowOpenFileDialog_Parms), &Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_bUseWin32_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_Title = { "Title", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowOpenFileDialog_Parms, Title), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_DefaultPathAndFile = { "DefaultPathAndFile", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowOpenFileDialog_Parms, DefaultPathAndFile), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_FilterPatterns_Inner = { "FilterPatterns", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_FilterPatterns = { "FilterPatterns", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowOpenFileDialog_Parms, FilterPatterns), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_SingleFilterDescription = { "SingleFilterDescription", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowOpenFileDialog_Parms, SingleFilterDescription), METADATA_PARAMS(nullptr, 0) };
 	void Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_bAllowMultipleSelects_SetBit(void* Obj)
 	{
 		((TinyFileDialogsLib_eventShowOpenFileDialog_Parms*)Obj)->bAllowMultipleSelects = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_bAllowMultipleSelects = { "bAllowMultipleSelects", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(TinyFileDialogsLib_eventShowOpenFileDialog_Parms), &Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_bAllowMultipleSelects_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_SingleFilterDescription = { "SingleFilterDescription", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowOpenFileDialog_Parms, SingleFilterDescription), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_FilterPatterns = { "FilterPatterns", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowOpenFileDialog_Parms, FilterPatterns), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_FilterPatterns_Inner = { "FilterPatterns", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_DefaultPathAndFile = { "DefaultPathAndFile", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowOpenFileDialog_Parms, DefaultPathAndFile), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_Title = { "Title", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowOpenFileDialog_Parms, Title), METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_bUseWin32_SetBit(void* Obj)
+	{
+		((TinyFileDialogsLib_eventShowOpenFileDialog_Parms*)Obj)->bUseWin32 = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_bUseWin32 = { "bUseWin32", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(TinyFileDialogsLib_eventShowOpenFileDialog_Parms), &Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_bUseWin32_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_OutStringArr_Inner = { "OutStringArr", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_OutStringArr = { "OutStringArr", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowOpenFileDialog_Parms, OutStringArr), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_NumSelectedFiles = { "NumSelectedFiles", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowOpenFileDialog_Parms, NumSelectedFiles), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowOpenFileDialog_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_NumSelectedFiles,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_OutStringArr,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_OutStringArr_Inner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_bUseWin32,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_bAllowMultipleSelects,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_SingleFilterDescription,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_FilterPatterns,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_FilterPatterns_Inner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_DefaultPathAndFile,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_Title,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_DefaultPathAndFile,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_FilterPatterns_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_FilterPatterns,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_SingleFilterDescription,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_bAllowMultipleSelects,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_bUseWin32,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_OutStringArr_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_OutStringArr,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_NumSelectedFiles,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog_Statics::Function_MetaDataParams[] = {
@@ -500,39 +570,39 @@ void EmptyLinkFunctionForGeneratedCodeTinyFileDialogsLib() {}
 			bool bUseWin32;
 			FString ReturnValue;
 		};
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Title;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_DefaultPathAndFile;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_FilterPatterns_Inner;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_FilterPatterns;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_SingleFilterDescription;
 		static void NewProp_bUseWin32_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bUseWin32;
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_SingleFilterDescription;
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_FilterPatterns;
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_FilterPatterns_Inner;
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_DefaultPathAndFile;
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Title;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowSaveFileDialog_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_Title = { "Title", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowSaveFileDialog_Parms, Title), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_DefaultPathAndFile = { "DefaultPathAndFile", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowSaveFileDialog_Parms, DefaultPathAndFile), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_FilterPatterns_Inner = { "FilterPatterns", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_FilterPatterns = { "FilterPatterns", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowSaveFileDialog_Parms, FilterPatterns), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_SingleFilterDescription = { "SingleFilterDescription", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowSaveFileDialog_Parms, SingleFilterDescription), METADATA_PARAMS(nullptr, 0) };
 	void Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_bUseWin32_SetBit(void* Obj)
 	{
 		((TinyFileDialogsLib_eventShowSaveFileDialog_Parms*)Obj)->bUseWin32 = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_bUseWin32 = { "bUseWin32", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(TinyFileDialogsLib_eventShowSaveFileDialog_Parms), &Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_bUseWin32_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_SingleFilterDescription = { "SingleFilterDescription", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowSaveFileDialog_Parms, SingleFilterDescription), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_FilterPatterns = { "FilterPatterns", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowSaveFileDialog_Parms, FilterPatterns), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_FilterPatterns_Inner = { "FilterPatterns", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_DefaultPathAndFile = { "DefaultPathAndFile", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowSaveFileDialog_Parms, DefaultPathAndFile), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_Title = { "Title", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowSaveFileDialog_Parms, Title), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowSaveFileDialog_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_bUseWin32,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_SingleFilterDescription,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_FilterPatterns,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_FilterPatterns_Inner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_DefaultPathAndFile,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_Title,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_DefaultPathAndFile,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_FilterPatterns_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_FilterPatterns,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_SingleFilterDescription,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_bUseWin32,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog_Statics::Function_MetaDataParams[] = {
@@ -565,30 +635,30 @@ void EmptyLinkFunctionForGeneratedCodeTinyFileDialogsLib() {}
 			bool bUseWin32;
 			FString ReturnValue;
 		};
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Title;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_DefaultPath;
 		static void NewProp_bUseWin32_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bUseWin32;
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_DefaultPath;
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Title;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowSelectFolderDialog_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowSelectFolderDialog_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowSelectFolderDialog_Statics::NewProp_Title = { "Title", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowSelectFolderDialog_Parms, Title), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowSelectFolderDialog_Statics::NewProp_DefaultPath = { "DefaultPath", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowSelectFolderDialog_Parms, DefaultPath), METADATA_PARAMS(nullptr, 0) };
 	void Z_Construct_UFunction_UTinyFileDialogsLib_ShowSelectFolderDialog_Statics::NewProp_bUseWin32_SetBit(void* Obj)
 	{
 		((TinyFileDialogsLib_eventShowSelectFolderDialog_Parms*)Obj)->bUseWin32 = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowSelectFolderDialog_Statics::NewProp_bUseWin32 = { "bUseWin32", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(TinyFileDialogsLib_eventShowSelectFolderDialog_Parms), &Z_Construct_UFunction_UTinyFileDialogsLib_ShowSelectFolderDialog_Statics::NewProp_bUseWin32_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowSelectFolderDialog_Statics::NewProp_DefaultPath = { "DefaultPath", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowSelectFolderDialog_Parms, DefaultPath), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowSelectFolderDialog_Statics::NewProp_Title = { "Title", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowSelectFolderDialog_Parms, Title), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTinyFileDialogsLib_ShowSelectFolderDialog_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TinyFileDialogsLib_eventShowSelectFolderDialog_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UTinyFileDialogsLib_ShowSelectFolderDialog_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowSelectFolderDialog_Statics::NewProp_ReturnValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowSelectFolderDialog_Statics::NewProp_bUseWin32,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowSelectFolderDialog_Statics::NewProp_DefaultPath,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowSelectFolderDialog_Statics::NewProp_Title,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowSelectFolderDialog_Statics::NewProp_DefaultPath,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowSelectFolderDialog_Statics::NewProp_bUseWin32,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTinyFileDialogsLib_ShowSelectFolderDialog_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UTinyFileDialogsLib_ShowSelectFolderDialog_Statics::Function_MetaDataParams[] = {
@@ -631,12 +701,12 @@ void EmptyLinkFunctionForGeneratedCodeTinyFileDialogsLib() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_TinyFileDialogs,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UTinyFileDialogsLib_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser, "ShowColorChooser" }, // 1229238214
-		{ &Z_Construct_UFunction_UTinyFileDialogsLib_ShowInputBox, "ShowInputBox" }, // 2669073596
-		{ &Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox, "ShowMessageBox" }, // 1852297434
-		{ &Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog, "ShowOpenFileDialog" }, // 2510748479
-		{ &Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog, "ShowSaveFileDialog" }, // 4251607809
-		{ &Z_Construct_UFunction_UTinyFileDialogsLib_ShowSelectFolderDialog, "ShowSelectFolderDialog" }, // 3240549984
+		{ &Z_Construct_UFunction_UTinyFileDialogsLib_ShowColorChooser, "ShowColorChooser" }, // 4001489778
+		{ &Z_Construct_UFunction_UTinyFileDialogsLib_ShowInputBox, "ShowInputBox" }, // 2116638260
+		{ &Z_Construct_UFunction_UTinyFileDialogsLib_ShowMessageBox, "ShowMessageBox" }, // 14431970
+		{ &Z_Construct_UFunction_UTinyFileDialogsLib_ShowOpenFileDialog, "ShowOpenFileDialog" }, // 962612574
+		{ &Z_Construct_UFunction_UTinyFileDialogsLib_ShowSaveFileDialog, "ShowSaveFileDialog" }, // 2222334252
+		{ &Z_Construct_UFunction_UTinyFileDialogsLib_ShowSelectFolderDialog, "ShowSelectFolderDialog" }, // 9699824
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UTinyFileDialogsLib_Statics::Class_MetaDataParams[] = {
@@ -672,7 +742,7 @@ void EmptyLinkFunctionForGeneratedCodeTinyFileDialogsLib() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UTinyFileDialogsLib, 1676277528);
+	IMPLEMENT_CLASS(UTinyFileDialogsLib, 2406589649);
 	template<> TINYFILEDIALOGS_API UClass* StaticClass<UTinyFileDialogsLib>()
 	{
 		return UTinyFileDialogsLib::StaticClass();

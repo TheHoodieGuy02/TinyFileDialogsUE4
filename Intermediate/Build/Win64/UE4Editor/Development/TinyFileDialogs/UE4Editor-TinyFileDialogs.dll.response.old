@@ -32,7 +32,7 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN
-"Z:\Unreal Engine Repository\4.24\Engine\Intermediate\Build\Win64\UE4Editor\Development\Core\SharedPCH.Core.ShadowErrors.h.obj"
+"Z:\Unreal Engine Repository\4.24\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
 "U:\UnrealProjects\Blank424\Plugins\TinyFileDialogs\Intermediate\Build\Win64\UE4Editor\Development\TinyFileDialogs\Module.TinyFileDialogs.cpp.obj"
 "U:\UnrealProjects\Blank424\Plugins\TinyFileDialogs\Intermediate\Build\Win64\UE4Editor\Development\TinyFileDialogs\Module.TinyFileDialogs.gen.cpp.obj"
 "Z:\Unreal Engine Repository\4.24\Engine\Intermediate\Build\Win64\UE4Editor\Development\Default.rc2.res"
@@ -62,6 +62,8 @@
 "imm32.lib"
 "U:\UnrealProjects\Blank424\Plugins\TinyFileDialogs\Source\ThirdParty\TinyFileDialogsLibrary\TinyFileDialogs\lib\tinyfiledialogs.x64.lib"
 "Z:\Unreal Engine Repository\4.24\Engine\Intermediate\Build\Win64\UE4Editor\Development\Core\UE4Editor-Core.lib"
+"Z:\Unreal Engine Repository\4.24\Engine\Intermediate\Build\Win64\UE4Editor\Development\CoreUObject\UE4Editor-CoreUObject.lib"
+"Z:\Unreal Engine Repository\4.24\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\UE4Editor-Engine.lib"
 "Z:\Unreal Engine Repository\4.24\Engine\Intermediate\Build\Win64\UE4Editor\Development\Projects\UE4Editor-Projects.lib"
 /OUT:"U:\UnrealProjects\Blank424\Plugins\TinyFileDialogs\Binaries\Win64\UE4Editor-TinyFileDialogs.dll"
 /IMPLIB:"U:\UnrealProjects\Blank424\Plugins\TinyFileDialogs\Intermediate\Build\Win64\UE4Editor\Development\TinyFileDialogs\UE4Editor-TinyFileDialogs.suppressed.lib"
