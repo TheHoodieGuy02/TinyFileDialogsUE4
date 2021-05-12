@@ -47,6 +47,8 @@ SourceArt/**/*.tga
 
 # Binary Files
 Binaries/*
+Binaries/Win64/*
+Binaries/**/*
 
 # Builds
 Build/*
